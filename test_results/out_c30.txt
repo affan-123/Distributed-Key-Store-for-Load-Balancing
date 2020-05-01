@@ -1,0 +1,43 @@
+putting (1, 7)
+Sending request to {"ip":"localhost","port":8086,"id":"5","available":false,"socket":null}
+KVClient sending request put with key 1 value 7 to {"ip":"localhost","port":8086,"id":"5","available":false,"socket":null}
+Response is : {"msgType":"PUT","key":"1","value":"7","status":"1"} node :{"ip":"localhost","port":8086,"id":"5","available":false,"socket":null}
+Time required to put is : 1670
+status: true
+putting (4, 5) (again)
+Sending request to {"ip":"localhost","port":8084,"id":"3","available":false,"socket":null}
+KVClient sending request put with key 4 value 5 to {"ip":"localhost","port":8084,"id":"3","available":false,"socket":null}
+Response is : {"msgType":"PUT","key":"4","value":"5","status":"1"} node :{"ip":"localhost","port":8084,"id":"3","available":false,"socket":null}
+Time required to put is : 1412
+status: true
+putting (2, 8) (again)
+Sending request to {"ip":"localhost","port":8081,"id":"0","available":false,"socket":null}
+KVClient sending request put with key 2 value 8 to {"ip":"localhost","port":8081,"id":"0","available":false,"socket":null}
+Response is : {"msgType":"PUT","key":"2","value":"8","status":"1"} node :{"ip":"localhost","port":8081,"id":"0","available":false,"socket":null}
+Time required to put is : 514
+status: true
+putting (5, 6) (again)
+Sending request to {"ip":"localhost","port":8084,"id":"3","available":false,"socket":null}
+KVClient sending request put with key 5 value 6 to {"ip":"localhost","port":8084,"id":"3","available":false,"socket":null}
+Response is : {"msgType":"PUT","key":"5","value":"6","status":"1"} node :{"ip":"localhost","port":8084,"id":"3","available":false,"socket":null}
+Time required to put is : 5092
+status: true
+getting key=1
+Sending request to {"ip":"localhost","port":8083,"id":"2","available":false,"socket":null}
+KVClient sending request get with key 1 to {"ip":"localhost","port":8083,"id":"2","available":false,"socket":null}
+Response is : {"msgType":"GET","key":"1","value":"7","status":"1"}
+Time required to get is : 4134
+returned: 7
+getting key=4
+Sending request to {"ip":"localhost","port":8084,"id":"3","available":false,"socket":null}
+KVClient sending request get with key 4 to {"ip":"localhost","port":8084,"id":"3","available":false,"socket":null}
+Response is : {"msgType":"GET","key":"4","value":"5","status":"1"}
+Time required to get is : 846
+returned: 5
+getting key=5
+Sending request to {"ip":"localhost","port":8085,"id":"4","available":false,"socket":null}
+KVClient sending request get with key 5 to {"ip":"localhost","port":8085,"id":"4","available":false,"socket":null}
+Response is : {"msgType":"GET","key":"5","value":"6","status":"1"}
+Time required to get is : 10964
+returned: 6
+It works
